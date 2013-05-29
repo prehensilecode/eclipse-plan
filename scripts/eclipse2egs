@@ -1,0 +1,12 @@
+#!/bin/bash -f
+
+# Wrapper script to convert a set of CT images into an EGS phantom
+
+# $Id: eclipse2egs 261 2008-06-26 18:25:01Z dwchin $
+
+JARFILE=/opt/java/EclipsePlan/EclipsePlan.jar
+
+JAVAEXE=/opt/jdk/bin/java
+JAVAOPT=-Xmx750m
+
+${JAVAEXE} ${JAVAOPT} -jar ${JARFILE} $*
